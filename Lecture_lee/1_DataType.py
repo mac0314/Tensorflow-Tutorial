@@ -90,3 +90,6 @@ placeholder는 input data와 label data을 텐서로 바꿔줄때 사용함
 placeholder는 저장시키는 것이 아니라 Tensor와 Data를 매핑시킨다
 이것을 feeding이라고 하는데 실행 이전에 해주어야한다.
 '''
+
+# session은 파일처럼 작용되기 때문에 닫아주어야함
+session.close()
