@@ -93,6 +93,7 @@ checkpoint/
 
 # Tutorial image data
 MNIST_data/
+profile_images/
 
 # Tensorboard
 logs/
