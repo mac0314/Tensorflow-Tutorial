@@ -97,3 +97,6 @@ profile_images/
 
 # Tensorboard
 logs/
+
+# Repackaging
+__init__.py
