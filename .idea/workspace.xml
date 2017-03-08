@@ -2,42 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5381c8b6-1ffe-4040-9ef7-b5ae7b7d4f95" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Reinforcement_learning/Lecture_02/BasicEnvironment.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Reinforcement_learning/Lecture_02/GameTutorial_frozenlake.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lecture_Chanwoo Lee/Lecture_07/profile_images/0004_4.jpg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Chanwoo Lee/Lecture_01/DataType.py" afterPath="$PROJECT_DIR$/Lecture_Chanwoo_Lee/Lecture_01/DataType.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Chanwoo Lee/Lecture_02/DesignModel.py" afterPath="$PROJECT_DIR$/Lecture_Chanwoo_Lee/Lecture_02/DesignModel.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Chanwoo Lee/Lecture_03/EvaluatingAndModelSave.py" afterPath="$PROJECT_DIR$/Lecture_Chanwoo_Lee/Lecture_03/EvaluatingAndModelSave.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Chanwoo Lee/Lecture_04/ModelRestore.py" afterPath="$PROJECT_DIR$/Lecture_Chanwoo_Lee/Lecture_04/ModelRestore.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Chanwoo Lee/Lecture_05/Tensorboard.py" afterPath="$PROJECT_DIR$/Lecture_Chanwoo_Lee/Lecture_05/Tensorboard.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Chanwoo Lee/Lecture_06/ReadCSV.py" afterPath="$PROJECT_DIR$/Lecture_Chanwoo_Lee/Lecture_06/ReadCSV.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Chanwoo Lee/Lecture_06/test0.csv" afterPath="$PROJECT_DIR$/Lecture_Chanwoo_Lee/Lecture_06/test0.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Chanwoo Lee/Lecture_06/test1.csv" afterPath="$PROJECT_DIR$/Lecture_Chanwoo_Lee/Lecture_06/test1.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Chanwoo Lee/Lecture_07/ConstructingCNN.py" afterPath="$PROJECT_DIR$/Lecture_Chanwoo_Lee/Lecture_07/ConstructingCNN.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_02/LinearRegression.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_02/LinearRegression.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_02/LinearRegression_Placeholder.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_02/LinearRegression_Placeholder.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_03/LinearRegression_MinimizeCost.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_03/LinearRegression_MinimizeCost.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_03/LinearRegression_MinimizeCost_Placeholder.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_03/LinearRegression_MinimizeCost_Placeholder.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_04/Multivariable_LinearRegression.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_04/Multivariable_LinearRegression.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_04/Multivariable_LinearRegression_Matrix.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_04/Multivariable_LinearRegression_Matrix.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_04/train.txt" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_04/train.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_05/LogisticClassification.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_05/LogisticClassification.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_05/train.txt" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_05/train.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_06/SoftmaxClassification.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_06/SoftmaxClassification.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_06/train.txt" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_06/train.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_07/SoftmaxClassifier_mnist.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_07/SoftmaxClassifier_mnist.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_09/TensorBoard.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_09/TensorBoard.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_09/XOR_NeuralNetwork.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_09/XOR_NeuralNetwork.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_09/XOR_sample.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_09/XOR_sample.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_09/train.txt" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_09/train.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_10/NN_Deep&amp;Dropout_mnist.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_10/NN_Deep&amp;Dropout_mnist.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_10/NN_XavierInitialization_mnist.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_10/NN_XavierInitialization_mnist.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_10/NeuralNets_mnist.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_10/NeuralNets_mnist.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_11/ConvolutionalNN_mnist.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_11/ConvolutionalNN_mnist.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_12/RNN_basics.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_12/RNN_basics.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lecture_Sung Kim/Lecture_12/RecurrentNN.py" afterPath="$PROJECT_DIR$/Lecture_Sung_Kim/Deep_learning/Lecture_12/RecurrentNN.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,11 +40,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameTutorial_frozenlake.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameTutorial_frozenlake.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lecture_Sung_Kim/Reinforcement_learning/Lecture_02/GameTutorial_frozenlake.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-612">
-              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+            <state relative-caret-position="183">
+              <caret line="64" column="49" lean-forward="true" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
+              <folding>
+                <element signature="e#224#234#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -755,9 +733,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="717" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1115,8 +1093,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lecture_Sung_Kim/Reinforcement_learning/Lecture_02/GameTutorial_frozenlake.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        <state relative-caret-position="183">
+          <caret line="64" column="49" lean-forward="true" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
+          <folding>
+            <element signature="e#224#234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
           <folding />
         </state>
       </provider>
