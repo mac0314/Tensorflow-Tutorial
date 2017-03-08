@@ -6,6 +6,8 @@
 
 import gym
 
+
+# Basic format
 env = gym.make("FrozenLake-v0")
 
 observation = env.reset()
