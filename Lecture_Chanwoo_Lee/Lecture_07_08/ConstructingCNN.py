@@ -1,14 +1,14 @@
 # This Python file uses the following encoding: utf-8
 
 # https://youtu.be/mLdqxGB2Pc4?list=PL1H8jIvbSo1qOtjQXFzBxMWjL_Gc5x3yG
-# Tensorflow 7강. Constructing CNN 1
+# Tensorflow 7~8강. Constructing CNN
 
 import tensorflow as tf
 import os
 from PIL import Image
 import numpy as np
 
-image_dir = os.getcwd() + "/profile_images/0004_4.jpg"
+image_dir = os.getcwd() + "/profile_images/man_shape.jpg"
 label_dir = os.getcwd() + "/profile_images/label.csv"
 
 imagename_list = [image_dir]
@@ -30,51 +30,43 @@ x = tf.cast(image, tf.float32)
 y_ = tf.cast(label, tf.float32)
 y_ = tf.reshape(y_, [-1, 1])
 
-image_width = 2048
-image_height = 1536
+image_width = 350
+image_height = 348
 
-# x = tf.placeholder(tf.float32, shape=[None, image_width, image_height])
-# y_ = tf.placeholder(tf.float32, shape=[None, 1])
+# Parameters
+W_hidden1 = tf.Variable(tf.truncated_normal([5, 5, 3, 32])) # RGB이기 때문에 3으로 줌
+b_hidden1 = tf.Variable(tf.zeros([32])) # 이미지가 32개의 부분으로 나뉘어진다.
 
-# hidden1 convolution
-# RGB이기 때문에 3으로 줌
-# 이미지가 32개의 부분으로 나뉘어진다.
-W_hidden1 = tf.Variable(tf.truncated_normal([5, 5, 3, 32]))
-b_hidden1 = tf.Variable(tf.zeros([32]))
-
-x_image = tf.reshape(x, [-1, image_width, image_height, 3])
-
-
-conv1 = tf.nn.conv2d(x_image, W_hidden1, strides=[1, 1, 1, 1], padding="SAME")
-hidden1 = tf.nn.relu(conv1 + b_hidden1)
-
-# hidden2 convolution
 W_hidden2 = tf.Variable(tf.truncated_normal([5, 5, 32, 64]))
 b_hidden2 = tf.Variable(tf.zeros([64]))
-
-conv2 = tf.nn.conv2d(hidden1, W_hidden2, strides=[1, 1, 1, 1], padding="SAME")
-hidden2 = tf.nn.relu(conv2 + b_hidden2)
-
-# Densely Connected Layer
-h_flat = tf.reshape(hidden2, [-1, image_width * image_height * 64])
 
 W_fc = tf.Variable(tf.truncated_normal([image_width * image_height * 64, 10]))
 b_fc = tf.Variable(tf.zeros([10]))
 
-h_fc = tf.nn.relu(tf.matmul(h_flat, W_fc) + b_fc)
-
-# Readout Layer
 W_out = tf.Variable(tf.truncated_normal([10, 1]))
 b_out = tf.Variable(tf.zeros([1]))
 
-prediction = tf.matmul(h_fc, W_out) + b_out
 
-print prediction
-print y_
+# CNN Model
+x_image = tf.reshape(x, [-1, image_width, image_height, 3])
+
+h_conv1 = tf.nn.relu(tf.nn.conv2d(x_image, W_hidden1, strides=[1, 1, 1, 1], padding="SAME") + b_hidden1)
+h_pool1 = tf.nn.max_pool(h_conv1, ksize=[1, 1, 1, 1], strides=[1, 1, 1, 1], padding="SAME")
+h_conv2 = tf.nn.relu(tf.nn.conv2d(h_pool1, W_hidden2, strides=[1, 1, 1, 1], padding="SAME") + b_hidden2)
+h_pool2 = tf.nn.max_pool(h_conv2, ksize=[1, 1, 1, 1], strides=[1, 1, 1, 1], padding="SAME")
+
+# Densely Connected Layer
+h_flat = tf.reshape(h_pool2, [-1, image_width * image_height * 64])
+
+h_fc = tf.nn.relu(tf.matmul(h_flat, W_fc) + b_fc)
+dropout_rate = 0.7
+drop_fc = tf.nn.dropout(h_fc, dropout_rate)
+
+prediction = tf.matmul(drop_fc, W_out) + b_out
+
 
 # Back propagation
-# loss
-cross_entropy = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(labels=prediction, logits=y_))
+cross_entropy = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(labels=prediction, logits=y_))   # loss
 train_step = tf.train.AdamOptimizer(1e-4).minimize(cross_entropy)
 
 correct_prediction = tf.equal(tf.argmax(prediction, 1), tf.argmax(y_, 1))
