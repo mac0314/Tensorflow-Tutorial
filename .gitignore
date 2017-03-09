@@ -94,9 +94,10 @@ checkpoint/
 # Tutorial image data
 MNIST_data/
 profile_images/
+Temp_data_Set/
 
 # Tensorboard
 logs/
 
 # Repackaging
-__init__.py
+__init__.py.idea
