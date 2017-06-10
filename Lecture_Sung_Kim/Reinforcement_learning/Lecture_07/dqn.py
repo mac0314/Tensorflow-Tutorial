@@ -6,7 +6,10 @@
 import tensorflow as tf
 import numpy as np
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2eb7b56c96c7eabb0bea1eea9a023fe5894b3127
 # Network - Go deep
 class DQN:
     def __init__(self, session, input_size, output_size, name="main"):
@@ -17,11 +20,16 @@ class DQN:
 
         self._build_network()
 
+<<<<<<< HEAD
     def _build_network(self, h1_size=10, h2_size=15, l_rate=0.01):
+=======
+    def _build_network(self, h_size=10, l_rate=0.001):
+>>>>>>> 2eb7b56c96c7eabb0bea1eea9a023fe5894b3127
         with tf.variable_scope(self.net_name):
             self._X = tf.placeholder(dtype=tf.float32, shape=[None, self.input_size], name="input_x")
 
             # First layer of weights
+<<<<<<< HEAD
             W1 = tf.get_variable("W1", shape=[self.input_size, h1_size],
                                  initializer=tf.contrib.layers.xavier_initializer())
 
@@ -35,11 +43,24 @@ class DQN:
 
             # Third layer of weights
             W3 = tf.get_variable("W3", shape=[h2_size, self.output_size],
+=======
+            W1 = tf.get_variable("W1", shape=[self.input_size, h_size],
+                                 initializer=tf.contrib.layers.xavier_initializer())
+
+            layer1 = tf.nn.tanh(tf.matmul(self._X, W1))
+
+            # Second layer of weights
+            W2 = tf.get_variable("W2", shape=[h_size, self.output_size],
+>>>>>>> 2eb7b56c96c7eabb0bea1eea9a023fe5894b3127
                                  initializer=tf.contrib.layers.xavier_initializer())
 
             # Q prediction
             # linear regression이기 때문에 activation function을 하지 않아도 된다.
+<<<<<<< HEAD
             self._Q_pred = tf.matmul(layer2, W3)
+=======
+            self._Q_pred = tf.matmul(layer1, W2)
+>>>>>>> 2eb7b56c96c7eabb0bea1eea9a023fe5894b3127
 
         # We need to define the parts of the network needed for learning a policy
         self._Y = tf.placeholder(dtype=tf.float32, shape=[None, self.output_size])
